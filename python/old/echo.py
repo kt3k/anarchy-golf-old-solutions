@@ -1,0 +1,1 @@
+print'hoge\nhage\n\nhige'

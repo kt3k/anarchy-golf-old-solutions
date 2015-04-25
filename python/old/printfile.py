@@ -1,0 +1,1 @@
+print open(raw_input()).read()

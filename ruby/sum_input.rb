@@ -1,0 +1,1 @@
+p eval"+gets.to_i"*9

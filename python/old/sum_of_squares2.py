@@ -1,0 +1,1 @@
+while 1:n=input();print~n*n*~(n*2)/6

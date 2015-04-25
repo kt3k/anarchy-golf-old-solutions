@@ -1,0 +1,1 @@
+for(i in 1:100){if(i%%15<1){i="FizzBuzz"}else if(i%%5<1){i="Buzz"}else if(i%%3<1){i="Fizz"};cat(i);cat("\n")}

@@ -1,0 +1,1 @@
+main=interact$concat .lines

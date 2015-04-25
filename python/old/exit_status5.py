@@ -1,0 +1,1 @@
+e=1;print eval(raw_input()[4:]+'+0')

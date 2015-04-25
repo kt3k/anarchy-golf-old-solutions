@@ -1,0 +1,26 @@
+extSetMap.cmo: print.cmo 
+extSetMap.cmx: print.cmx 
+common.cmo: extSetMap.cmo print.cmo 
+common.cmx: extSetMap.cmx print.cmx 
+parse.cmo: print.cmo 
+parse.cmx: print.cmx 
+grass.cmo: common.cmo 
+grass.cmx: common.cmx 
+let.cmo: print.cmo 
+let.cmx: print.cmx 
+eval.cmo: common.cmo grass.cmo 
+eval.cmx: common.cmx grass.cmx 
+compile.cmo: common.cmo extSetMap.cmo grass.cmo let.cmo print.cmo 
+compile.cmx: common.cmx extSetMap.cmx grass.cmx let.cmx print.cmx 
+decompile.cmo: common.cmo extSetMap.cmo grass.cmo let.cmo print.cmo 
+decompile.cmx: common.cmx extSetMap.cmx grass.cmx let.cmx print.cmx 
+yaccLet.cmo: let.cmo parse.cmo yaccLet.cmi 
+yaccLet.cmx: let.cmx parse.cmx yaccLet.cmi 
+yaccGrass.cmo: common.cmo grass.cmo parse.cmo yaccGrass.cmi 
+yaccGrass.cmx: common.cmx grass.cmx parse.cmx yaccGrass.cmi 
+lexLet.cmo: parse.cmo yaccLet.cmi 
+lexLet.cmx: parse.cmx yaccLet.cmx 
+lexGrass.cmo: parse.cmo yaccGrass.cmi 
+lexGrass.cmx: parse.cmx yaccGrass.cmx 
+yaccLet.cmi: let.cmo 
+yaccGrass.cmi: grass.cmo 

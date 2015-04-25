@@ -1,0 +1,1 @@
+loop{i=gets.to_i;p -~i*i/2*i/i}

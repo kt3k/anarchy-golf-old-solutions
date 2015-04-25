@@ -1,0 +1,1 @@
+print' '.join(sorted(eval(("^set(raw_input().split())"*2)[1:])))

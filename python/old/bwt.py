@@ -1,0 +1,1 @@
+while 1:a=raw_input();_=sorted([a[x:]+a[:x]for x in range(len(a))]);print _.index(a),`_`[x+2::x+5]

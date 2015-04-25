@@ -1,0 +1,1 @@
+a:"g";stdin.get_s(1K).to_i.times{a~="o";}(a~"gle").p;

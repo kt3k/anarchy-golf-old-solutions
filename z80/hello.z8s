@@ -1,0 +1,7 @@
+ LD L,8
+ LD A,(HL)
+ RST 38H
+ INC L
+ JR NZ,2
+ HALT
+ "Hello, world!"

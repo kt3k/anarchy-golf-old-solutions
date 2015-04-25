@@ -1,0 +1,1 @@
+print open('/dev/fd/0').read()[::-1]

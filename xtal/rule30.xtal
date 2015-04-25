@@ -1,0 +1,3 @@
+a:stdin.get_s(999).split("").to_a;b:"";for(i:0;i<a.size;a:a.slice(1,a.size)){a.p;}
+
+/*b~=a.to_s<"# #"?"#":"  '"<a.to_s?"#":" ";b.p;*/

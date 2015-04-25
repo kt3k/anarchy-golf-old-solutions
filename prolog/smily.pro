@@ -1,0 +1,1 @@
+m:-shell('python -c\'i=-3\nwhile i^65:print":-"[:i+4]+")"*i;i+=2\'').

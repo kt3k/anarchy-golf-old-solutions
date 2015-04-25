@@ -1,0 +1,21 @@
+(* Print "Hello, world!" *)
+let one f x = Succ(f(f x))
+let zero f x = f(f x)
+let 1 x f = f (one x)
+let 0 x f = f (zero x)
+let 0b1 f = f Succ
+let putchar x = Out(x(one(zero(zero(one(zero(zero(zero Succ))))))W))
+let H =   0b1 0 0 1 0 0 0 putchar
+let e =   0b1 1 0 0 1 0 1 putchar
+let l =   0b1 1 0 1 1 0 0 putchar
+let l =   0b1 1 0 1 1 0 0 putchar
+let o =   0b1 1 0 1 1 1 1 putchar
+let comma = 0b1 0 1 1 0 0 putchar
+let space = 0b1 0 0 0 0 0 putchar
+let w =   0b1 1 1 0 1 1 1 putchar
+let o =   0b1 1 0 1 1 1 1 putchar
+let r =   0b1 1 1 0 0 1 0 putchar
+let l =   0b1 1 0 1 1 0 0 putchar
+let d =   0b1 1 0 0 1 0 0 putchar
+let bang =  0b1 0 0 0 0 1 putchar
+let nl =        0b1 0 1 0 putchar

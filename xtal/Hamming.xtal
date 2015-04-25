@@ -1,0 +1,1 @@
+b:stdin.get_s(3).to_i;for(i:1;b>0;i++)if(1K*455625%i<1){i.p;b--;}

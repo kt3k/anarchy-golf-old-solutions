@@ -1,0 +1,1 @@
+m='\n_=raw_input()\nif~-(_ in m):print _;m+=_'*90;exec m

@@ -1,0 +1,1 @@
+while 1:i=n=1;exec"c=n;j=i\nwhile j:c,j=j,c%j\nn*=i/c;i+=1;"*input();print n

@@ -1,0 +1,1 @@
+<?=str_repeat($i=fgets(STDIN),strlen($i)-1);

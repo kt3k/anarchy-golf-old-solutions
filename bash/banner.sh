@@ -1,0 +1,1 @@
+read i;banner $i

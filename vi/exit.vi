@@ -1,0 +1,3 @@
+Qso test.vi
+r !echo $?
+w

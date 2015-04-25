@@ -1,0 +1,1 @@
+<?while($s=fgets(STDIN))echo++$i." ".$s;

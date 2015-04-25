@@ -1,0 +1,1 @@
+while 1:a=raw_input();i=0;exec"z=a.replace('?',`i`);i+=sum(ord(x)%30%18*2*(~c*5-c%2*33-44)for c,x in enumerate(z[4:]))%(len(z)^5)>0;"*10;print z

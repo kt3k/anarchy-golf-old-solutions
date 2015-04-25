@@ -1,0 +1,1 @@
+enum _{_;{System.out.print("1");}}

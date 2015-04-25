@@ -1,0 +1,6 @@
+puts 1
+
+p __FILE__
+
+p ENV
+

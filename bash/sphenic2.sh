@@ -1,0 +1,1 @@
+factor {2..762}|ruby -na -e 'p $_.to_i if$F==$F.unip&&$F.size==4'

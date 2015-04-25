@@ -1,0 +1,1 @@
+REBOL[]prin"Hello, world!"

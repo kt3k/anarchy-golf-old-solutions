@@ -1,0 +1,201 @@
+   0  $accept : %entry% $end
+
+   1  entry : code EOF
+
+   2  code : inst
+   3       | inst SMALL_V code
+
+   4  inst : apps
+   5       | small_ws apps
+
+   6  apps :
+   7       | app apps
+
+   8  app : capital_ws small_ws
+
+   9  capital_ws : CAPITAL_WS
+  10             | CAPITAL_WS capital_ws
+
+  11  small_ws : SMALL_WS
+  12           | SMALL_WS small_ws
+
+  13  %entry% : '\001' entry
+
+state 0
+	$accept : . %entry% $end  (0)
+
+	'\001'  shift 1
+	.  error
+
+	%entry%  goto 2
+
+
+state 1
+	%entry% : '\001' . entry  (13)
+	apps : .  (6)
+
+	CAPITAL_WS  shift 3
+	SMALL_WS  shift 4
+	EOF  reduce 6
+	SMALL_V  reduce 6
+
+	entry  goto 5
+	code  goto 6
+	inst  goto 7
+	apps  goto 8
+	small_ws  goto 9
+	app  goto 10
+	capital_ws  goto 11
+
+
+state 2
+	$accept : %entry% . $end  (0)
+
+	$end  accept
+
+
+state 3
+	capital_ws : CAPITAL_WS .  (9)
+	capital_ws : CAPITAL_WS . capital_ws  (10)
+
+	CAPITAL_WS  shift 3
+	SMALL_WS  reduce 9
+
+	capital_ws  goto 12
+
+
+state 4
+	small_ws : SMALL_WS .  (11)
+	small_ws : SMALL_WS . small_ws  (12)
+
+	SMALL_WS  shift 4
+	EOF  reduce 11
+	SMALL_V  reduce 11
+	CAPITAL_WS  reduce 11
+
+	small_ws  goto 13
+
+
+state 5
+	%entry% : '\001' entry .  (13)
+
+	.  reduce 13
+
+
+state 6
+	entry : code . EOF  (1)
+
+	EOF  shift 14
+	.  error
+
+
+state 7
+	code : inst .  (2)
+	code : inst . SMALL_V code  (3)
+
+	SMALL_V  shift 15
+	EOF  reduce 2
+
+
+state 8
+	inst : apps .  (4)
+
+	.  reduce 4
+
+
+state 9
+	inst : small_ws . apps  (5)
+	apps : .  (6)
+
+	CAPITAL_WS  shift 3
+	EOF  reduce 6
+	SMALL_V  reduce 6
+
+	apps  goto 16
+	app  goto 10
+	capital_ws  goto 11
+
+
+state 10
+	apps : app . apps  (7)
+	apps : .  (6)
+
+	CAPITAL_WS  shift 3
+	EOF  reduce 6
+	SMALL_V  reduce 6
+
+	apps  goto 17
+	app  goto 10
+	capital_ws  goto 11
+
+
+state 11
+	app : capital_ws . small_ws  (8)
+
+	SMALL_WS  shift 4
+	.  error
+
+	small_ws  goto 18
+
+
+state 12
+	capital_ws : CAPITAL_WS capital_ws .  (10)
+
+	.  reduce 10
+
+
+state 13
+	small_ws : SMALL_WS small_ws .  (12)
+
+	.  reduce 12
+
+
+state 14
+	entry : code EOF .  (1)
+
+	.  reduce 1
+
+
+state 15
+	code : inst SMALL_V . code  (3)
+	apps : .  (6)
+
+	CAPITAL_WS  shift 3
+	SMALL_WS  shift 4
+	EOF  reduce 6
+	SMALL_V  reduce 6
+
+	code  goto 19
+	inst  goto 7
+	apps  goto 8
+	small_ws  goto 9
+	app  goto 10
+	capital_ws  goto 11
+
+
+state 16
+	inst : small_ws apps .  (5)
+
+	.  reduce 5
+
+
+state 17
+	apps : app apps .  (7)
+
+	.  reduce 7
+
+
+state 18
+	app : capital_ws small_ws .  (8)
+
+	.  reduce 8
+
+
+state 19
+	code : inst SMALL_V code .  (3)
+
+	.  reduce 3
+
+
+7 terminals, 9 nonterminals
+14 grammar rules, 20 states

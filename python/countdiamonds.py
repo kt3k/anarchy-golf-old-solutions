@@ -1,0 +1,1 @@
+while 1:print eval("+raw_input().count('**')"*11)

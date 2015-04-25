@@ -1,0 +1,1 @@
+while 1:print id(id)%5*raw_input()or'No. Everyone does.'

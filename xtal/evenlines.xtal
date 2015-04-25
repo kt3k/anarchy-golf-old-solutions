@@ -1,0 +1,1 @@
+a:stdin.get_s(9K).split("\n").to_a;range(0,a.size){if(it%2>0)a[it].p;}

@@ -1,0 +1,1 @@
+while 1:print reduce(lambda x,y:x*y,input())

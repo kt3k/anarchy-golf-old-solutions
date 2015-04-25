@@ -1,0 +1,1 @@
+for x in set(file('/dev/fd/0')):print x,

@@ -1,0 +1,1 @@
+<?while($s=fgets(STDIN))$i+=$s;echo$i;

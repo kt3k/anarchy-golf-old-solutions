@@ -1,0 +1,1 @@
+for i in range(100):print'FizzBuzz'[4-i%3/2*4:4+i%5/4*4]or-~i

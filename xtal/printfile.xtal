@@ -1,0 +1,1 @@
+open(stdin.get_s(20+clock()*79%3)).get_s(3K).p;

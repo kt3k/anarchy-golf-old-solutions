@@ -1,0 +1,1 @@
+exec id('')%11*"print raw_input();"

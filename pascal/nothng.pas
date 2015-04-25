@@ -1,0 +1,1 @@
+begin write('*NOTHING*')end.

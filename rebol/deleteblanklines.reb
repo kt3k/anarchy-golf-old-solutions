@@ -1,0 +1,1 @@
+REBOL[]while[a: input][if""< a[print a]]

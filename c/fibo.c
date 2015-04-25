@@ -1,0 +1,1 @@
+n=1;main(i){for(i=1;n>0;n+=i=n-i)printf("%d\n",n);}

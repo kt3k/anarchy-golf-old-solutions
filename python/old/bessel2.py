@@ -1,0 +1,1 @@
+while 1:s=0;x=input();i=j=1;exec"s+=j;j*=-x*x/4/i/i;i+=1;"*16;print'%f'%s

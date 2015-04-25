@@ -1,0 +1,1 @@
+REBOL[]a: tail input until[prin a: back a print reverse a head? reverse a]

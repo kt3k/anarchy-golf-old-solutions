@@ -1,0 +1,1 @@
+while 1:print sum(n*n for n in range(input()+1))

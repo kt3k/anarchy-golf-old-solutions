@@ -1,0 +1,9 @@
+(* An echo program in Let *)
+let loop loop =
+  Out(In _);  // You can use a semi colon.
+  loop loop
+
+(* To run this program,				*)
+(*  $ grass echo.let				*)
+(* To translate this program into a grass code,	*)
+(*  $ grass echo.let -o echo.grass		*)

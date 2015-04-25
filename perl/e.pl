@@ -1,0 +1,1 @@
+use bigint;$i=99;$a=10**100+$a/$i--while$i;print$a

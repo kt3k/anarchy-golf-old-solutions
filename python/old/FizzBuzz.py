@@ -1,0 +1,1 @@
+print'\n'.join((i%3<1)*'Fizz'+(i%5<1)*'Buzz'or str(i)for i in range(1,101))

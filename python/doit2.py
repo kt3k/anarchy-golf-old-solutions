@@ -1,0 +1,1 @@
+while 1:_=raw_input();a='Miss...1 2 3 4 5 6 Do it!!';b=a.find(_)==7;print a[b*7+len(_)*b:]

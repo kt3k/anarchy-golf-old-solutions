@@ -1,0 +1,1 @@
+while 1:a=raw_input();i=0;exec"z=a.replace('?',`i`);c=s=0\nfor x in z[4:]:s+=ord(x)%30%18*(2+c*90-c%2*66);c+=1\ni+=s%(len(a)^5)>0;"*10;print z

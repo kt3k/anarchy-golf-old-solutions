@@ -1,0 +1,1 @@
+print((r"""qwertyuiop@[asdfghjkl;:]zxcvbnm,./\1234567890-^\QWERTYUIOP`{ASDFGHJKL+*}ZXCVBNM<>?_!"#$%&'()~=|"""*2)[:153],"WhokilledCockRobin?I,saidtheSparrow,Withmybowandarrow,IkilledCockRobin.","LondonBridgeIsfallingdown,Fallingdown,Fallingdown.LondonBridgeIsfallingdown,Myfairlady.")[id({})%3]

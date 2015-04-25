@@ -1,0 +1,1 @@
+i;main(){for(;i<100000;)printf("%d ",i++);}

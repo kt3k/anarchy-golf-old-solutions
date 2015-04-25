@@ -1,0 +1,1 @@
+print"happy",("(:","('-' )","d:M")[id(id)%3],"new",raw_input(),"year!"

@@ -1,0 +1,1 @@
+main(x){for(;~scanf("%d",&x);)printf("%d is %sa leap year.\n",x,x*~((x%25>0)*3)%16?"not ":"");}

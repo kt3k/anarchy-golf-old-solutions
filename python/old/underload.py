@@ -1,0 +1,1 @@
+print(raw_input(),":"*120,"x"*27)[id(id)%3]

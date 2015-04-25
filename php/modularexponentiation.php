@@ -1,0 +1,1 @@
+<?=gmp_strval(gmp_powm(2,gmp_pow(2,100),gmp_pow(10,1000)));

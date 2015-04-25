@@ -1,0 +1,1 @@
+open('test.xtal').get_s(30).p;

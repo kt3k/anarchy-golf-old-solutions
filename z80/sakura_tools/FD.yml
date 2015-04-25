@@ -1,0 +1,1024 @@
+- bin: 00
+  op: 
+  operand: 
+  dsc:
+- bin: 01
+  op: 
+  operand: 
+  dsc:
+- bin: 02
+  op: 
+  operand: 
+  dsc:
+- bin: 03
+  op: 
+  operand: 
+  dsc:
+- bin: 04
+  op: 
+  operand: 
+  dsc:
+- bin: 05
+  op: 
+  operand: 
+  dsc:
+- bin: 06
+  op: 
+  operand: 
+  dsc:
+- bin: 07
+  op: 
+  operand: 
+  dsc:
+- bin: 08
+  op: 
+  operand: 
+  dsc:
+- bin: 09
+  op: 
+  operand: 
+  dsc:
+- bin: 0A
+  op: 
+  operand: 
+  dsc:
+- bin: 0B
+  op: 
+  operand: 
+  dsc:
+- bin: 0C
+  op: 
+  operand: 
+  dsc:
+- bin: 0D
+  op: 
+  operand: 
+  dsc:
+- bin: 0E
+  op: 
+  operand: 
+  dsc:
+- bin: 0F
+  op: 
+  operand: 
+  dsc:
+- bin: 10
+  op: 
+  operand: 
+  dsc:
+- bin: 11
+  op: 
+  operand: 
+  dsc:
+- bin: 12
+  op: 
+  operand: 
+  dsc:
+- bin: 13
+  op: 
+  operand: 
+  dsc:
+- bin: 14
+  op: 
+  operand: 
+  dsc:
+- bin: 15
+  op: 
+  operand: 
+  dsc:
+- bin: 16
+  op: 
+  operand: 
+  dsc:
+- bin: 17
+  op: 
+  operand: 
+  dsc:
+- bin: 18
+  op: 
+  operand: 
+  dsc:
+- bin: 19
+  op: 
+  operand: 
+  dsc:
+- bin: 1A
+  op: 
+  operand: 
+  dsc:
+- bin: 1B
+  op: 
+  operand: 
+  dsc:
+- bin: 1C
+  op: 
+  operand: 
+  dsc:
+- bin: 1D
+  op: 
+  operand: 
+  dsc:
+- bin: 1E
+  op: 
+  operand: 
+  dsc:
+- bin: 1F
+  op: 
+  operand: 
+  dsc:
+- bin: 20
+  op: 
+  operand: 
+  dsc:
+- bin: 21
+  op: 
+  operand: 
+  dsc:
+- bin: 22
+  op: 
+  operand: 
+  dsc:
+- bin: 23
+  op: 
+  operand: 
+  dsc:
+- bin: 24
+  op: 
+  operand: 
+  dsc:
+- bin: 25
+  op: 
+  operand: 
+  dsc:
+- bin: 26
+  op: 
+  operand: 
+  dsc:
+- bin: 27
+  op: 
+  operand: 
+  dsc:
+- bin: 28
+  op: 
+  operand: 
+  dsc:
+- bin: 29
+  op: 
+  operand: 
+  dsc:
+- bin: 2A
+  op: 
+  operand: 
+  dsc:
+- bin: 2B
+  op: 
+  operand: 
+  dsc:
+- bin: 2C
+  op: 
+  operand: 
+  dsc:
+- bin: 2D
+  op: 
+  operand: 
+  dsc:
+- bin: 2E
+  op: 
+  operand: 
+  dsc:
+- bin: 2F
+  op: 
+  operand: 
+  dsc:
+- bin: 30
+  op: 
+  operand: 
+  dsc:
+- bin: 31
+  op: 
+  operand: 
+  dsc:
+- bin: 32
+  op: 
+  operand: 
+  dsc:
+- bin: 33
+  op: 
+  operand: 
+  dsc:
+- bin: 34
+  op: 
+  operand: 
+  dsc:
+- bin: 35
+  op: 
+  operand: 
+  dsc:
+- bin: 36
+  op: 
+  operand: 
+  dsc:
+- bin: 37
+  op: 
+  operand: 
+  dsc:
+- bin: 38
+  op: 
+  operand: 
+  dsc:
+- bin: 39
+  op: 
+  operand: 
+  dsc:
+- bin: 3A
+  op: 
+  operand: 
+  dsc:
+- bin: 3B
+  op: 
+  operand: 
+  dsc:
+- bin: 3C
+  op: 
+  operand: 
+  dsc:
+- bin: 3D
+  op: 
+  operand: 
+  dsc:
+- bin: 3E
+  op: 
+  operand: 
+  dsc:
+- bin: 3F
+  op: 
+  operand: 
+  dsc:
+- bin: 40
+  op: 
+  operand: 
+  dsc:
+- bin: 41
+  op: 
+  operand: 
+  dsc:
+- bin: 42
+  op: 
+  operand: 
+  dsc:
+- bin: 43
+  op: 
+  operand: 
+  dsc:
+- bin: 44
+  op: 
+  operand: 
+  dsc:
+- bin: 45
+  op: 
+  operand: 
+  dsc:
+- bin: 46
+  op: 
+  operand: 
+  dsc:
+- bin: 47
+  op: 
+  operand: 
+  dsc:
+- bin: 48
+  op: 
+  operand: 
+  dsc:
+- bin: 49
+  op: 
+  operand: 
+  dsc:
+- bin: 4A
+  op: 
+  operand: 
+  dsc:
+- bin: 4B
+  op: 
+  operand: 
+  dsc:
+- bin: 4C
+  op: 
+  operand: 
+  dsc:
+- bin: 4D
+  op: 
+  operand: 
+  dsc:
+- bin: 4E
+  op: 
+  operand: 
+  dsc:
+- bin: 4F
+  op: 
+  operand: 
+  dsc:
+- bin: 50
+  op: 
+  operand: 
+  dsc:
+- bin: 51
+  op: 
+  operand: 
+  dsc:
+- bin: 52
+  op: 
+  operand: 
+  dsc:
+- bin: 53
+  op: 
+  operand: 
+  dsc:
+- bin: 54
+  op: 
+  operand: 
+  dsc:
+- bin: 55
+  op: 
+  operand: 
+  dsc:
+- bin: 56
+  op: 
+  operand: 
+  dsc:
+- bin: 57
+  op: 
+  operand: 
+  dsc:
+- bin: 58
+  op: 
+  operand: 
+  dsc:
+- bin: 59
+  op: 
+  operand: 
+  dsc:
+- bin: 5A
+  op: 
+  operand: 
+  dsc:
+- bin: 5B
+  op: 
+  operand: 
+  dsc:
+- bin: 5C
+  op: 
+  operand: 
+  dsc:
+- bin: 5D
+  op: 
+  operand: 
+  dsc:
+- bin: 5E
+  op: 
+  operand: 
+  dsc:
+- bin: 5F
+  op: 
+  operand: 
+  dsc:
+- bin: 60
+  op: 
+  operand: 
+  dsc:
+- bin: 61
+  op: 
+  operand: 
+  dsc:
+- bin: 62
+  op: 
+  operand: 
+  dsc:
+- bin: 63
+  op: 
+  operand: 
+  dsc:
+- bin: 64
+  op: 
+  operand: 
+  dsc:
+- bin: 65
+  op: 
+  operand: 
+  dsc:
+- bin: 66
+  op: 
+  operand: 
+  dsc:
+- bin: 67
+  op: 
+  operand: 
+  dsc:
+- bin: 68
+  op: 
+  operand: 
+  dsc:
+- bin: 69
+  op: 
+  operand: 
+  dsc:
+- bin: 6A
+  op: 
+  operand: 
+  dsc:
+- bin: 6B
+  op: 
+  operand: 
+  dsc:
+- bin: 6C
+  op: 
+  operand: 
+  dsc:
+- bin: 6D
+  op: 
+  operand: 
+  dsc:
+- bin: 6E
+  op: 
+  operand: 
+  dsc:
+- bin: 6F
+  op: 
+  operand: 
+  dsc:
+- bin: 70
+  op: 
+  operand: 
+  dsc:
+- bin: 71
+  op: 
+  operand: 
+  dsc:
+- bin: 72
+  op: 
+  operand: 
+  dsc:
+- bin: 73
+  op: 
+  operand: 
+  dsc:
+- bin: 74
+  op: 
+  operand: 
+  dsc:
+- bin: 75
+  op: 
+  operand: 
+  dsc:
+- bin: 76
+  op: 
+  operand: 
+  dsc:
+- bin: 77
+  op: 
+  operand: 
+  dsc:
+- bin: 78
+  op: 
+  operand: 
+  dsc:
+- bin: 79
+  op: 
+  operand: 
+  dsc:
+- bin: 7A
+  op: 
+  operand: 
+  dsc:
+- bin: 7B
+  op: 
+  operand: 
+  dsc:
+- bin: 7C
+  op: 
+  operand: 
+  dsc:
+- bin: 7D
+  op: 
+  operand: 
+  dsc:
+- bin: 7E
+  op: 
+  operand: 
+  dsc:
+- bin: 7F
+  op: 
+  operand: 
+  dsc:
+- bin: 80
+  op: 
+  operand: 
+  dsc:
+- bin: 81
+  op: 
+  operand: 
+  dsc:
+- bin: 82
+  op: 
+  operand: 
+  dsc:
+- bin: 83
+  op: 
+  operand: 
+  dsc:
+- bin: 84
+  op: 
+  operand: 
+  dsc:
+- bin: 85
+  op: 
+  operand: 
+  dsc:
+- bin: 86
+  op: 
+  operand: 
+  dsc:
+- bin: 87
+  op: 
+  operand: 
+  dsc:
+- bin: 88
+  op: 
+  operand: 
+  dsc:
+- bin: 89
+  op: 
+  operand: 
+  dsc:
+- bin: 8A
+  op: 
+  operand: 
+  dsc:
+- bin: 8B
+  op: 
+  operand: 
+  dsc:
+- bin: 8C
+  op: 
+  operand: 
+  dsc:
+- bin: 8D
+  op: 
+  operand: 
+  dsc:
+- bin: 8E
+  op: 
+  operand: 
+  dsc:
+- bin: 8F
+  op: 
+  operand: 
+  dsc:
+- bin: 90
+  op: 
+  operand: 
+  dsc:
+- bin: 91
+  op: 
+  operand: 
+  dsc:
+- bin: 92
+  op: 
+  operand: 
+  dsc:
+- bin: 93
+  op: 
+  operand: 
+  dsc:
+- bin: 94
+  op: 
+  operand: 
+  dsc:
+- bin: 95
+  op: 
+  operand: 
+  dsc:
+- bin: 96
+  op: 
+  operand: 
+  dsc:
+- bin: 97
+  op: 
+  operand: 
+  dsc:
+- bin: 98
+  op: 
+  operand: 
+  dsc:
+- bin: 99
+  op: 
+  operand: 
+  dsc:
+- bin: 9A
+  op: 
+  operand: 
+  dsc:
+- bin: 9B
+  op: 
+  operand: 
+  dsc:
+- bin: 9C
+  op: 
+  operand: 
+  dsc:
+- bin: 9D
+  op: 
+  operand: 
+  dsc:
+- bin: 9E
+  op: 
+  operand: 
+  dsc:
+- bin: 9F
+  op: 
+  operand: 
+  dsc:
+- bin: A0
+  op: 
+  operand: 
+  dsc:
+- bin: A1
+  op: 
+  operand: 
+  dsc:
+- bin: A2
+  op: 
+  operand: 
+  dsc:
+- bin: A3
+  op: 
+  operand: 
+  dsc:
+- bin: A4
+  op: 
+  operand: 
+  dsc:
+- bin: A5
+  op: 
+  operand: 
+  dsc:
+- bin: A6
+  op: 
+  operand: 
+  dsc:
+- bin: A7
+  op: 
+  operand: 
+  dsc:
+- bin: A8
+  op: 
+  operand: 
+  dsc:
+- bin: A9
+  op: 
+  operand: 
+  dsc:
+- bin: AA
+  op: 
+  operand: 
+  dsc:
+- bin: AB
+  op: 
+  operand: 
+  dsc:
+- bin: AC
+  op: 
+  operand: 
+  dsc:
+- bin: AD
+  op: 
+  operand: 
+  dsc:
+- bin: AE
+  op: 
+  operand: 
+  dsc:
+- bin: AF
+  op: 
+  operand: 
+  dsc:
+- bin: B0
+  op: 
+  operand: 
+  dsc:
+- bin: B1
+  op: 
+  operand: 
+  dsc:
+- bin: B2
+  op: 
+  operand: 
+  dsc:
+- bin: B3
+  op: 
+  operand: 
+  dsc:
+- bin: B4
+  op: 
+  operand: 
+  dsc:
+- bin: B5
+  op: 
+  operand: 
+  dsc:
+- bin: B6
+  op: 
+  operand: 
+  dsc:
+- bin: B7
+  op: 
+  operand: 
+  dsc:
+- bin: B8
+  op: 
+  operand: 
+  dsc:
+- bin: B9
+  op: 
+  operand: 
+  dsc:
+- bin: BA
+  op: 
+  operand: 
+  dsc:
+- bin: BB
+  op: 
+  operand: 
+  dsc:
+- bin: BC
+  op: 
+  operand: 
+  dsc:
+- bin: BD
+  op: 
+  operand: 
+  dsc:
+- bin: BE
+  op: 
+  operand: 
+  dsc:
+- bin: BF
+  op: 
+  operand: 
+  dsc:
+- bin: C0
+  op: 
+  operand: 
+  dsc:
+- bin: C1
+  op: 
+  operand: 
+  dsc:
+- bin: C2
+  op: 
+  operand: 
+  dsc:
+- bin: C3
+  op: 
+  operand: 
+  dsc:
+- bin: C4
+  op: 
+  operand: 
+  dsc:
+- bin: C5
+  op: 
+  operand: 
+  dsc:
+- bin: C6
+  op: 
+  operand: 
+  dsc:
+- bin: C7
+  op: 
+  operand: 
+  dsc:
+- bin: C8
+  op: 
+  operand: 
+  dsc:
+- bin: C9
+  op: 
+  operand: 
+  dsc:
+- bin: CA
+  op: 
+  operand: 
+  dsc:
+- bin: CB
+  op: 
+  operand: 
+  dsc:
+- bin: CC
+  op: 
+  operand: 
+  dsc:
+- bin: CD
+  op: 
+  operand: 
+  dsc:
+- bin: CE
+  op: 
+  operand: 
+  dsc:
+- bin: CF
+  op: 
+  operand: 
+  dsc:
+- bin: D0
+  op: 
+  operand: 
+  dsc:
+- bin: D1
+  op: 
+  operand: 
+  dsc:
+- bin: D2
+  op: 
+  operand: 
+  dsc:
+- bin: D3
+  op: 
+  operand: 
+  dsc:
+- bin: D4
+  op: 
+  operand: 
+  dsc:
+- bin: D5
+  op: 
+  operand: 
+  dsc:
+- bin: D6
+  op: 
+  operand: 
+  dsc:
+- bin: D7
+  op: 
+  operand: 
+  dsc:
+- bin: D8
+  op: 
+  operand: 
+  dsc:
+- bin: D9
+  op: 
+  operand: 
+  dsc:
+- bin: DA
+  op: 
+  operand: 
+  dsc:
+- bin: DB
+  op: 
+  operand: 
+  dsc:
+- bin: DC
+  op: 
+  operand: 
+  dsc:
+- bin: DD
+  op: 
+  operand: 
+  dsc:
+- bin: DE
+  op: 
+  operand: 
+  dsc:
+- bin: DF
+  op: 
+  operand: 
+  dsc:
+- bin: E0
+  op: 
+  operand: 
+  dsc:
+- bin: E1
+  op: 
+  operand: 
+  dsc:
+- bin: E2
+  op: 
+  operand: 
+  dsc:
+- bin: E3
+  op: 
+  operand: 
+  dsc:
+- bin: E4
+  op: 
+  operand: 
+  dsc:
+- bin: E5
+  op: 
+  operand: 
+  dsc:
+- bin: E6
+  op: 
+  operand: 
+  dsc:
+- bin: E7
+  op: 
+  operand: 
+  dsc:
+- bin: E8
+  op: 
+  operand: 
+  dsc:
+- bin: E9
+  op: 
+  operand: 
+  dsc:
+- bin: EA
+  op: 
+  operand: 
+  dsc:
+- bin: EB
+  op: 
+  operand: 
+  dsc:
+- bin: EC
+  op: 
+  operand: 
+  dsc:
+- bin: ED
+  op: 
+  operand: 
+  dsc:
+- bin: EE
+  op: 
+  operand: 
+  dsc:
+- bin: EF
+  op: 
+  operand: 
+  dsc:
+- bin: F0
+  op: 
+  operand: 
+  dsc:
+- bin: F1
+  op: 
+  operand: 
+  dsc:
+- bin: F2
+  op: 
+  operand: 
+  dsc:
+- bin: F3
+  op: 
+  operand: 
+  dsc:
+- bin: F4
+  op: 
+  operand: 
+  dsc:
+- bin: F5
+  op: 
+  operand: 
+  dsc:
+- bin: F6
+  op: 
+  operand: 
+  dsc:
+- bin: F7
+  op: 
+  operand: 
+  dsc:
+- bin: F8
+  op: 
+  operand: 
+  dsc:
+- bin: F9
+  op: 
+  operand: 
+  dsc:
+- bin: FA
+  op: 
+  operand: 
+  dsc:
+- bin: FB
+  op: 
+  operand: 
+  dsc:
+- bin: FC
+  op: 
+  operand: 
+  dsc:
+- bin: FD
+  op: 
+  operand: 
+  dsc:
+- bin: FE
+  op: 
+  operand: 
+  dsc:
+- bin: FF
+  op: 
+  operand: 
+  dsc:

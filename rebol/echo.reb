@@ -1,0 +1,1 @@
+REBOL[]loop 4[print input]

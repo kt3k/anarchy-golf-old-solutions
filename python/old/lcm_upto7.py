@@ -1,0 +1,1 @@
+while 1:i=n=1;exec"n*=[x for x in range(1,1001)if i%x<1][n%i>0];i+=1;"*input();print n

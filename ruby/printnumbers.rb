@@ -1,0 +1,1 @@
+15.times{|x|puts 16.to_s 16-x}

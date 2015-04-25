@@ -1,0 +1,1 @@
+print'uffalo '.join('BbBbbb'*2)[:63]+'.'

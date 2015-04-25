@@ -1,0 +1,1 @@
+print'\n'.join(`i`for i in range(input(),-1,-1)if not`i`.strip('0')[1:])

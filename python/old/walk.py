@@ -1,0 +1,1 @@
+print('ABCDEFGHIJKLMNOPQRSTUVWXYZ','Helloworld','q'*21)[id(id)%3]

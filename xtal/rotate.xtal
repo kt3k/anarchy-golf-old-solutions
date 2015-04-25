@@ -1,0 +1,2 @@
+a:stdin.get_s(9K).split("
+").to_a;a.slice(1,a.size){it.p;}a[0].p;

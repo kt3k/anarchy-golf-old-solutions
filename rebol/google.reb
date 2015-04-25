@@ -1,0 +1,1 @@
+REBOL[]loop do ask"g"[prin"o"]prin"gle"

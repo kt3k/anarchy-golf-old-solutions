@@ -1,0 +1,6 @@
+let f1 x1x2 =
+  let t1 = Succ x1 in
+  let t2 = W t1 in
+  let t3 = t2 Out x2 in
+  t3 (t2 x1 t1) t3
+let v1  = f1 W f1

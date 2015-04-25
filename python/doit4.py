@@ -1,0 +1,1 @@
+while 1:_='*'+raw_input();print('*1 2 3 4 5 6 Do it!!%sMiss...'%_).split(_)[1]

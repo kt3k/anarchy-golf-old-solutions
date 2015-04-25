@@ -1,0 +1,1 @@
+print''.join(chr(i+1)for i in range(127))

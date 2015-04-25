@@ -1,0 +1,1 @@
+while 1:y=input();print y,'is not'[:y*~(y%25and 3)&13|2],'a leap year.'

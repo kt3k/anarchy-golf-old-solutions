@@ -1,0 +1,1 @@
+procedure gnat.io.a is begin put("*NOTHING*");end;

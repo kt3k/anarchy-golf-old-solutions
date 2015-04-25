@@ -1,0 +1,1 @@
+REBOL[]prin 2 * do ask""

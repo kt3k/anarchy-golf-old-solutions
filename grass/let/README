@@ -1,0 +1,82 @@
+=== Glid: Grass/Let Interpreter and Decompiler (version 0.080914) ==
+
+* What is Glid?
+ Glid is yet another Grass interpreter which can: 
+  + execute Grass and Let programs,
+  + tranlate a Let program into a Grass program, and
+  + tranlate a Grass program into a Let program.
+
+
+* What is the Grass language?
+ Grass is a functional grass-planting programming language
+ developed by Katsuhiro Ueno. 
+ See http://www.blue.sky.or.jp/grass/ for detail.
+
+
+* What is the Let language?
+ + It is a human-readable/writable functional language.
+ + You can write a program in functional style.
+ + The Let program ranges over 'Prog' in the following syntax:
+
+    Prog := Def*
+    Def := let Var Var* = Exp
+    Exp := Var  |  Exp Exp  |  let Var = Exp in Exp  |  Exp; Exp
+    Var := In  |  Out  |  Succ  |  W  |  [_a-zA-Z0-9]+
+
+  The semantics is omitted since it is trivial.
+  The special variable name "_" is used for dummy variables.
+  You can insert comments between "(*" and "*)"
+  or from "//" to the end of the line.
+
+
+* What are requirements to install the Glid?
+ + Objective Caml: version 3.08.02 or later.
+
+
+* How can we build the Glid?
+   Just type "make" to build the program "glid.bin".
+   If you have native code compiler for Objective Caml,
+   try "make opt" to build "glid.opt".
+
+
+* How can we use it?
+   Assume that the name of the built program is 'glid'
+   (which may be glid.bin or glid.opt).
+   The name of a Grass and Let program must have the suffix
+   '.grass' and '.let', resp.
+   
+   To run a Grass program, 
+    $ glid program.grass
+
+   To run a Let program,
+    $ glid program.let
+
+   To translate a Let program into a Grass program,
+    $ glid program.let -o program.grass
+
+   To translate a Let program into a Grass program
+   and output it to the standard output,
+    $ glid program.let -
+
+   To translate a Grass program into a Let program,
+    $ glid program.grass -o program.let
+
+   To translate a Grass program into a Let program
+   and output it to the standard output,
+    $ glid program.grass -
+
+   To get an unkind usage,
+    $ glid -h
+   or invoke it with illegal options.
+
+
+* Are there any sample programs?
+   You will find in the 'samples' directory.
+   Note that it may contain hints for golfers:-).
+
+
+* What is the licence of the distribution?
+   GPLv2 or later. 
+
+---
+Keisuke Nakano <ksk _AT_ seeds-man _DOT_ com>.

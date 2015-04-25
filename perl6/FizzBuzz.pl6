@@ -1,0 +1,1 @@
+my$a=1;while $a<=100{say$a;$a+=1}#if($a%15<1){say'FizzBuzz'}elsif($a%3<1){say'Fizz'}elsif($a%5<1){say'Buzz'}else{say$a}$a+=1}

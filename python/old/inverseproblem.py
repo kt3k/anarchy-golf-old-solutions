@@ -1,0 +1,1 @@
+print''.join(chr(-~ord(c)*7%128)for c in raw_input())

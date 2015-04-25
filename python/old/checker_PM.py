@@ -1,0 +1,1 @@
+a=raw_input();s="1 0 "*99;exec"print s[:%s*2-1];s=s[2:];"%a[2:]*int(a[:2])

@@ -1,0 +1,1 @@
+1.upto(t=?Ã){|s|s+=t while s!=t=s.to_s.reverse.to_i;p s}

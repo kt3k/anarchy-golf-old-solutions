@@ -1,0 +1,1 @@
+for _ in raw_input():a=tuple(range(65,-~ord(_)));print'%c'*len(a)%a

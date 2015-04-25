@@ -1,0 +1,1 @@
+while 1:a=raw_input();i=0;b=15-len(a)/3;exec"z=a.replace('?',`i`);i+=sum(x>':'or(b%2*c+~b*c%2*2+1)*int(x)for c,x in enumerate(z[4:]))%b>0;"*b;print z

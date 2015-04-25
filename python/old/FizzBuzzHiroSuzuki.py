@@ -1,0 +1,1 @@
+for _ in range(100):print _%3/2*"Fizz"+_%5/4*"Buzz"or-~_

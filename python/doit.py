@@ -1,0 +1,1 @@
+while 1:_=raw_input();a='1 2 3 4 5 6 Do it!!';print['Miss...',a[len(_):]][a.find(_)==0]

@@ -1,0 +1,1 @@
+print'222CMH2g2H++200+225--O>>222-MH>g24OOC  O  2  +  2  H  2  O'[id(id)%3::3]

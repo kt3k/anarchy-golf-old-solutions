@@ -1,0 +1,1 @@
+REBOL[]while[a: input][loop 2[print a]]

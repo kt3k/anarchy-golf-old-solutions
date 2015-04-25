@@ -1,0 +1,1 @@
+range(1,101){|i|(i%15<1?"FizzBuzz":i%5<1?"Buzz":i%3<1?"Fizz":i).p;}

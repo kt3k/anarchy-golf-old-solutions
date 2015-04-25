@@ -1,0 +1,4 @@
+ PUSH DE
+ INC A
+ JP P,2020H
+ HALT

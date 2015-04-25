@@ -1,0 +1,1 @@
+print'222CMH2g2H+-+-200+-225--O+AD4APg-222-MH+AD4-g24OOC  O  2  +-  2  H  2  O'+AFs-id(id)+ACU-3::3+AF0-

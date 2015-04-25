@@ -1,0 +1,1 @@
+print`sorted(raw_input())`[2::5]

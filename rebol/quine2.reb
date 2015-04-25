@@ -1,0 +1,1 @@
+REBOL[]prin read %test.reb

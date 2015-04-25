@@ -1,0 +1,1 @@
+$_=q(print"\$_=q($_);eval[reverse $_]")eval#lave;)"

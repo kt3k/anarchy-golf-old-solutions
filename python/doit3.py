@@ -1,0 +1,1 @@
+while 1:a='1 2 3 4 5 6 Do it!!'.split(raw_input());print a[0]and'Miss...'or a[1]

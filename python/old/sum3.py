@@ -1,0 +1,1 @@
+while 1:_=input();print-~_*_>>_/_

@@ -1,0 +1,1 @@
+while 1:a=raw_input();i=1;exec"k=a[:i];i+=len(a)/i*k!=a;"*89;print k

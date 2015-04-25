@@ -1,0 +1,1 @@
+REBOL[]ask""while[i: input][print i]

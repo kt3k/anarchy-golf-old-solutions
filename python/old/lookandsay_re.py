@@ -1,0 +1,1 @@
+import re;x=`input()`;exec"print x;x=re.sub('1+|2+|3+',lambda x:`len(x.group())`+x.group()[0],x);"*12

@@ -1,0 +1,1 @@
+for _ in raw_input():print`map(chr,range(65,-~ord(_)))`[2::5]

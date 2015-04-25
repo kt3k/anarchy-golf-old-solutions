@@ -1,0 +1,1 @@
+print''.join(map(lambda x,*y:chr(ord(x)+list(y).count('+')-list(y).count('-')),*eval((2,11,21)[id('')%3]*"raw_input(),")))

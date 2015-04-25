@@ -1,0 +1,1 @@
+for i in range(36):print':-)'[:i+3]+'))'*i;i+=1

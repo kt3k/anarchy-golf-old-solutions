@@ -1,0 +1,6 @@
+b:"%";
+a:
+%[;"a:".p;print(b);a.p;
+a:
+]
+;"a:".p;print(b);a.p.p;

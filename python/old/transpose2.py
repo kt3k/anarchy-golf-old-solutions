@@ -1,0 +1,1 @@
+for i in zip(*open('/dev/fd/0')):print''.join(i)

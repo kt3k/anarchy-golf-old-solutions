@@ -1,0 +1,415 @@
+   0  $accept : %entry% $end
+
+   1  entry : exp EOF
+
+   2  exp : single
+   3      | single exp
+
+   4  single : LET var args EQ body
+
+   5  args :
+   6       | var args
+
+   7  body : LET var EQ app IN body
+   8       | app SEMICOLON body
+   9       | app
+
+  10  app : LPAREN app RPAREN
+  11      | var
+  12      | app appR
+
+  13  appR : LPAREN app RPAREN
+  14       | var
+
+  15  var : VAR
+  16      | SUCC
+  17      | PUTC
+  18      | GETC
+  19      | W
+
+  20  %entry% : '\001' entry
+
+state 0
+	$accept : . %entry% $end  (0)
+
+	'\001'  shift 1
+	.  error
+
+	%entry%  goto 2
+
+
+state 1
+	%entry% : '\001' . entry  (20)
+
+	LET  shift 3
+	.  error
+
+	entry  goto 4
+	exp  goto 5
+	single  goto 6
+
+
+state 2
+	$accept : %entry% . $end  (0)
+
+	$end  accept
+
+
+state 3
+	single : LET . var args EQ body  (4)
+
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 12
+
+
+state 4
+	%entry% : '\001' entry .  (20)
+
+	.  reduce 20
+
+
+state 5
+	entry : exp . EOF  (1)
+
+	EOF  shift 13
+	.  error
+
+
+state 6
+	exp : single .  (2)
+	exp : single . exp  (3)
+
+	LET  shift 3
+	EOF  reduce 2
+
+	exp  goto 14
+	single  goto 6
+
+
+state 7
+	var : SUCC .  (16)
+
+	.  reduce 16
+
+
+state 8
+	var : GETC .  (18)
+
+	.  reduce 18
+
+
+state 9
+	var : PUTC .  (17)
+
+	.  reduce 17
+
+
+state 10
+	var : W .  (19)
+
+	.  reduce 19
+
+
+state 11
+	var : VAR .  (15)
+
+	.  reduce 15
+
+
+state 12
+	single : LET var . args EQ body  (4)
+	args : .  (5)
+
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	EQ  reduce 5
+
+	var  goto 15
+	args  goto 16
+
+
+state 13
+	entry : exp EOF .  (1)
+
+	.  reduce 1
+
+
+state 14
+	exp : single exp .  (3)
+
+	.  reduce 3
+
+
+state 15
+	args : var . args  (6)
+	args : .  (5)
+
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	EQ  reduce 5
+
+	var  goto 15
+	args  goto 17
+
+
+state 16
+	single : LET var args . EQ body  (4)
+
+	EQ  shift 18
+	.  error
+
+
+state 17
+	args : var args .  (6)
+
+	.  reduce 6
+
+
+state 18
+	single : LET var args EQ . body  (4)
+
+	LET  shift 19
+	LPAREN  shift 20
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 21
+	body  goto 22
+	app  goto 23
+
+
+state 19
+	body : LET . var EQ app IN body  (7)
+
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 24
+
+
+state 20
+	app : LPAREN . app RPAREN  (10)
+
+	LPAREN  shift 20
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 21
+	app  goto 25
+
+
+state 21
+	app : var .  (11)
+
+	.  reduce 11
+
+
+state 22
+	single : LET var args EQ body .  (4)
+
+	.  reduce 4
+
+
+state 23
+	body : app . SEMICOLON body  (8)
+	body : app .  (9)
+	app : app . appR  (12)
+
+	LPAREN  shift 26
+	SEMICOLON  shift 27
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	EOF  reduce 9
+	LET  reduce 9
+
+	var  goto 28
+	appR  goto 29
+
+
+state 24
+	body : LET var . EQ app IN body  (7)
+
+	EQ  shift 30
+	.  error
+
+
+state 25
+	app : LPAREN app . RPAREN  (10)
+	app : app . appR  (12)
+
+	LPAREN  shift 26
+	RPAREN  shift 31
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 28
+	appR  goto 29
+
+
+state 26
+	appR : LPAREN . app RPAREN  (13)
+
+	LPAREN  shift 20
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 21
+	app  goto 32
+
+
+state 27
+	body : app SEMICOLON . body  (8)
+
+	LET  shift 19
+	LPAREN  shift 20
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 21
+	body  goto 33
+	app  goto 23
+
+
+state 28
+	appR : var .  (14)
+
+	.  reduce 14
+
+
+state 29
+	app : app appR .  (12)
+
+	.  reduce 12
+
+
+state 30
+	body : LET var EQ . app IN body  (7)
+
+	LPAREN  shift 20
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 21
+	app  goto 34
+
+
+state 31
+	app : LPAREN app RPAREN .  (10)
+
+	.  reduce 10
+
+
+state 32
+	app : app . appR  (12)
+	appR : LPAREN app . RPAREN  (13)
+
+	LPAREN  shift 26
+	RPAREN  shift 35
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 28
+	appR  goto 29
+
+
+state 33
+	body : app SEMICOLON body .  (8)
+
+	.  reduce 8
+
+
+state 34
+	body : LET var EQ app . IN body  (7)
+	app : app . appR  (12)
+
+	IN  shift 36
+	LPAREN  shift 26
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 28
+	appR  goto 29
+
+
+state 35
+	appR : LPAREN app RPAREN .  (13)
+
+	.  reduce 13
+
+
+state 36
+	body : LET var EQ app IN . body  (7)
+
+	LET  shift 19
+	LPAREN  shift 20
+	SUCC  shift 7
+	GETC  shift 8
+	PUTC  shift 9
+	W  shift 10
+	VAR  shift 11
+	.  error
+
+	var  goto 21
+	body  goto 37
+	app  goto 23
+
+
+state 37
+	body : LET var EQ app IN body .  (7)
+
+	.  reduce 7
+
+
+15 terminals, 10 nonterminals
+21 grammar rules, 38 states

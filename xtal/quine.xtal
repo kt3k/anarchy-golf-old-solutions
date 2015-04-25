@@ -1,0 +1,1 @@
+a:"%f*";b:"%s";c:"*";d:%f*a:"%s";b:"%s";c:"%s";d:%s%s%s;d(a,b,c,a,d(b,b,b,b,b,b),c).p;*;d(a,b,c,a,d(b,b,b,b,b,b),c).p;

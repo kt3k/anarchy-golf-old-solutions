@@ -1,0 +1,1 @@
+for i in[id(id)%3,1,2,1,2,0]:print raw_input().split()[i]

@@ -1,0 +1,1 @@
+enum _{_;{try{byte b[]=new byte[8196];System.in.read(b);System.out.print(new String(b));}catch(Exception e){}}}

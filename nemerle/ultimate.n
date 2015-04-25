@@ -1,0 +1,1 @@
+Nemerle.IO.print(42)

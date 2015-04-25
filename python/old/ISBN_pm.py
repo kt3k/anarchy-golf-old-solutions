@@ -1,0 +1,1 @@
+while 1:a=raw_input();b=len(a);_=0;exec"c=a.replace('?',`_`);_+=sum(ord(c[_])%30*(_*90-_%2*66+2)for _ in range(4,b))%(b^5)>0;"*b;print c

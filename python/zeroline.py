@@ -1,0 +1,1 @@
+while 4:print"0"*len(raw_input())

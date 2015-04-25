@@ -1,0 +1,1 @@
+for c in'Ÿˆ@¹.ÇÚ‚j£Æj':print`[ord(c)>>n&1for n in range(8)]`[1::3],

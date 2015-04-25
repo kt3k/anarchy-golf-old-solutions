@@ -1,0 +1,1 @@
+loop{putc putc getc}

@@ -1,0 +1,824 @@
+- bin: 00
+  op: NOP
+  dsc: do nothing
+- bin: 01
+  op: LD BC, nn
+  operand: nn
+  dsc: BC = nn
+- bin: 02
+  op: LD (BC), A
+  dsc: (BC) = A
+- bin: 03
+  op: INC BC
+  dsc: 2
+- bin: 04
+  op: INC B
+  dsc: 2
+- bin: 05
+  op: DEC B
+  dsc: 2
+- bin: 06
+  op: LD B, n
+  operand: n
+  dsc: 2
+- bin: 07
+  op: RLCA
+  dsc: 2
+- bin: 08
+  op: EX AF, AF'
+  dsc: 2
+- bin: 09
+  op: ADD HL, BC
+  dsc: 2
+- bin: 0A
+  op: LD A, (BC)
+  dsc: 2
+- bin: 0B
+  op: DEC BC
+  dsc: 2
+- bin: 0C
+  op: INC C
+  dsc: 2
+- bin: 0D
+  op: DEC C
+  dsc: 2
+- bin: 0E
+  op: LD C, n
+  operand: n
+  dsc: 2
+- bin: 0F
+  op: RRCA
+  dsc: 2
+- bin: 10
+  op: DJNZ
+  dsc: 2
+- bin: 11
+  op: LD DE, nn
+  operand: nn
+  dsc: 2
+- bin: 12
+  op: LD (DE), A
+  dsc: 2
+- bin: 13
+  op: INC DE
+  dsc: 2
+- bin: 14
+  op: INC D
+  dsc: 2
+- bin: 15
+  op: DEC D
+  dsc: 2
+- bin: 16
+  op: LD D, n
+  operand: n
+  dsc: 2
+- bin: 17
+  op: RLA
+  dsc: 2
+- bin: 18
+  op: JR e
+  operand: e
+  dsc: 2
+- bin: 19
+  op: ADD HL, DE
+  dsc: 2
+- bin: 1A
+  op: LD A, (DE)
+  dsc: 2
+- bin: 1B
+  op: DEC DE
+  dsc: 2
+- bin: 1C
+  op: INC E
+  dsc: 2
+- bin: 1D
+  op: DEC E
+  dsc: 2
+- bin: 1E
+  op: LD E, n
+  operand: n
+  dsc: 2
+- bin: 1F
+  op: RRA
+  dsc: 2
+- bin: 20
+  op: JR NZ, e
+  operand: e
+  dsc: 2
+- bin: 21
+  op: LD HL, nn
+  operand: nn
+  dsc: 2
+- bin: 22
+  op: LD (nn), HL
+  operand: nn
+  dsc: 2
+- bin: 23
+  op: INC HL
+  dsc: 2
+- bin: 24
+  op: INC H
+  dsc: 2
+- bin: 25
+  op: DEC H
+  dsc: 2
+- bin: 26
+  op: LD H, n
+  operand: n
+  dsc: 2
+- bin: 27
+  op: DAA
+  dsc: 2
+- bin: 28
+  op: JR Z, e
+  operand: e
+  dsc: 2
+- bin: 29
+  op: ADD HL, HL
+  dsc: 2
+- bin: 2A
+  op: LD HL, (nn)
+  operand: nn
+  dsc: 2
+- bin: 2B
+  op: DEC HL
+  dsc: 2
+- bin: 2C
+  op: INC L
+  dsc: 2
+- bin: 2D
+  op: DEC L
+  dsc: 2
+- bin: 2E
+  op: LD L, n
+  operand: n
+  dsc: 2
+- bin: 2F
+  op: CPL
+  operand: 1
+  dsc: 2
+- bin: 30
+  op: JR NC, e
+  operand: e
+  dsc: 2
+- bin: 31
+  op: LD SP, nn
+  operand: nn
+  dsc: 2
+- bin: 32
+  op: LD (nn), A
+  operand: nn
+  dsc: 2
+- bin: 33
+  op: INC SP
+  dsc: 2
+- bin: 34
+  op: INC (HL)
+  dsc: 2
+- bin: 35
+  op: DEC (HL)
+  dsc: 2
+- bin: 36
+  op: LD (HL), n
+  operand: n
+  dsc: 2
+- bin: 37
+  op: SCF
+  dsc: 2
+- bin: 38
+  op: JR C, nn
+  operand: nn
+  dsc: 2
+- bin: 39
+  op: ADD HL, SP
+  dsc: 2
+- bin: 3A
+  op: LS A, (nn)
+  operand: nn
+  dsc: 2
+- bin: 3B
+  op: DEC SP
+  dsc: 2
+- bin: 3C
+  op: INC A
+  dsc: 2
+- bin: 3D
+  op: DEC A
+  dsc: 2
+- bin: 3E
+  op: LD A, n
+  operand: n
+  dsc: 2
+- bin: 3F
+  op: CCF
+  operand: 1
+  dsc: 2
+- bin: 40
+  op: LD B, B
+  dsc: 2
+- bin: 41
+  op: LD B, C
+  dsc: 2
+- bin: 42
+  op: LD B, D
+  dsc: 2
+- bin: 43
+  op: LD B, E
+  operand: 1
+  dsc: 2
+- bin: 44
+  op: LD B ,H
+  dsc: 2
+- bin: 45
+  op: LD B, L
+  dsc: 2
+- bin: 46
+  op: LD B, (HL)
+  dsc: 2
+- bin: 47
+  op: LD B, A
+  dsc: 2
+- bin: 48
+  op: LD C, B
+  dsc: 2
+- bin: 49
+  op: LD C, C
+  dsc: 2
+- bin: 4A
+  op: LD C, D
+  dsc: 2
+- bin: 4B
+  op: LD C, E
+  dsc: 2
+- bin: 4C
+  op: LD C, H
+  dsc: 2
+- bin: 4D
+  op: LD C, L
+  dsc: 2
+- bin: 4E
+  op: LD C, (HL)
+  dsc: 2
+- bin: 4F
+  op: LD C, A
+  dsc: 2
+- bin: 50
+  op: LD D, B
+  dsc: 2
+- bin: 51
+  op: LD D, C
+  dsc: 2
+- bin: 52
+  op: LD D, D
+  dsc: 2
+- bin: 53
+  op: LD D, E
+  dsc: 2
+- bin: 54
+  op: L D, H
+  dsc: 2
+- bin: 55
+  op: LD D, L
+  dsc: 2
+- bin: 56
+  op: LD D, (HL)
+  dsc: 2
+- bin: 57
+  op: LD D, A
+  dsc: 2
+- bin: 58
+  op: LD E, B
+  dsc: 2
+- bin: 59
+  op: LD E, C
+  dsc: 2
+- bin: 5A
+  op: LD E, D
+  dsc: 2
+- bin: 5B
+  op: LD E, E
+  dsc: 2
+- bin: 5C
+  op: LD E, H
+  dsc: 2
+- bin: 5D
+  op: LD E, L
+  dsc: 2
+- bin: 5E
+  op: LD E, (HL)
+  dsc: 2
+- bin: 5F
+  op: LD E, A
+  dsc: 2
+- bin: 60
+  op: LD H, B
+  dsc: 2
+- bin: 61
+  op: LD H, C
+  dsc: 2
+- bin: 62
+  op: LD H, D
+  dsc: 2
+- bin: 63
+  op: LD H, E
+  dsc: 2
+- bin: 64
+  op: LD H, H
+  dsc: 2
+- bin: 65
+  op: LD H, L
+  dsc: 2
+- bin: 66
+  op: LD H, (HL)
+  dsc: 2
+- bin: 67
+  op: LD H, A
+  dsc: 2
+- bin: 68
+  op: LD L, B
+  dsc: 2
+- bin: 69
+  op: LD L, C
+  dsc: 2
+- bin: 6A
+  op: LD L, D
+  dsc: 2
+- bin: 6B
+  op: LD L, E
+  dsc: 2
+- bin: 6C
+  op: LD L, H
+  dsc: 2
+- bin: 6D
+  op: LD L, L
+  dsc: 2
+- bin: 6E
+  op: LD L, (HL)
+  dsc: 2
+- bin: 6F
+  op: LD L, A
+  dsc: 2
+- bin: 70
+  op: LD (HL), B
+  dsc: 2
+- bin: 71
+  op: LD (HL), C
+  dsc: 2
+- bin: 72
+  op: LD (HL), D
+  dsc: 2
+- bin: 73
+  op: LD (HL), E
+  dsc: 2
+- bin: 74
+  op: LD (HL), H
+  dsc: 2
+- bin: 75
+  op: LD (HL), L
+  dsc: 2
+- bin: 76
+  op: HALT
+  dsc: 2
+- bin: 77
+  op: LD (HL), A
+  dsc: 2
+- bin: 78
+  op: LD A, B
+  dsc: 2
+- bin: 79
+  op: LD A, C
+  dsc: 2
+- bin: 7A
+  op: LD A, D
+  dsc: 2
+- bin: 7B
+  op: LD A, E
+  dsc: 2
+- bin: 7C
+  op: LD A, H
+  dsc: 2
+- bin: 7D
+  op: LD A, L
+  dsc: 2
+- bin: 7E
+  op: LD A, (HL)
+  dsc: 2
+- bin: 7F
+  op: LD A, A
+  dsc: 2
+- bin: 80
+  op: ADD A, B
+  dsc: 2
+- bin: 81
+  op: ADD A, C
+  dsc: 2
+- bin: 82
+  op: ADD A, D
+  dsc: 2
+- bin: 83
+  op: ADD A, E
+  dsc: 2
+- bin: 84
+  op: ADD A, H
+  dsc: 2
+- bin: 85
+  op: ADD A, L
+  dsc: 2
+- bin: 86
+  op: ADD A, (HL)
+  dsc: 2
+- bin: 87
+  op: ADD A, A
+  dsc: 2
+- bin: 88
+  op: ADC A, B
+  dsc: 2
+- bin: 89
+  op: ADC A, C
+  dsc: 2
+- bin: 8A
+  op: ADC A, D
+  dsc: 2
+- bin: 8B
+  op: ADC A, E
+  dsc: 2
+- bin: 8C
+  op: ADC A, H
+  dsc: 2
+- bin: 8D
+  op: ADC A, L
+  dsc: 2
+- bin: 8E
+  op: ADC A, (HL)
+  dsc: 2
+- bin: 8F
+  op: ADC A, A
+  dsc: 2
+- bin: 90
+  op: SUB B
+  dsc: 2
+- bin: 91
+  op: SUB C
+  dsc: 2
+- bin: 92
+  op: SUB D
+  dsc: 2
+- bin: 93
+  op: SUB E
+  dsc: 2
+- bin: 94
+  op: SUB H
+  dsc: 2
+- bin: 95
+  op: SUB L
+  dsc: 2
+- bin: 96
+  op: SUB (HL)
+  dsc: 2
+- bin: 97
+  op: SUB A
+  dsc: 2
+- bin: 98
+  op: SBC A, B
+  dsc: 2
+- bin: 99
+  op: SBC A, C
+  dsc: 2
+- bin: 9A
+  op: SBC A, D
+  dsc: 2
+- bin: 9B
+  op: SBC A, E
+  dsc: 2
+- bin: 9C
+  op: SBC A, H
+  dsc: 2
+- bin: 9D
+  op: SBC A, L
+  dsc: 2
+- bin: 9E
+  op: SBC A, (HL)
+  dsc: 2
+- bin: 9F
+  op: SBC A, A
+  dsc: 2
+- bin: A0
+  op: AND B
+  dsc: 2
+- bin: A1
+  op: AND C
+  dsc: 2
+- bin: A2
+  op: AND D
+  dsc: 2
+- bin: A3
+  op: AND E
+  dsc: 2
+- bin: A4
+  op: AND H
+  dsc: 2
+- bin: A5
+  op: AND L
+  dsc: 2
+- bin: A6
+  op: AND (HL)
+  dsc: 2
+- bin: A7
+  op: AND A
+  dsc: 2
+- bin: A8
+  op: XOR B
+  dsc: 2
+- bin: A9
+  op: XOR C
+  dsc: 2
+- bin: AA
+  op: XOR D
+  dsc: 2
+- bin: AB
+  op: XOR E
+  dsc: 2
+- bin: AC
+  op: XOR H
+  dsc: 2
+- bin: AD
+  op: SOR L
+  dsc: 2
+- bin: AE
+  op: XOR (HL)
+  dsc: 2
+- bin: AF
+  op: XOR A
+  dsc: 2
+- bin: B0
+  op: OR B
+  dsc: 2
+- bin: B1
+  op: OR C
+  dsc: 2
+- bin: B2
+  op: OR D
+  dsc: 2
+- bin: B3
+  op: OR E
+  dsc: 2
+- bin: B4
+  op: OR E
+  dsc: 2
+- bin: B5
+  op: OR L
+  dsc: 2
+- bin: B6
+  op: OR (HL)
+  dsc: 2
+- bin: B7
+  op: OR A
+  dsc: 2
+- bin: B8
+  op: CP B
+  dsc: 2
+- bin: B9
+  op: CP C
+  dsc: 2
+- bin: BA
+  op: CP E
+  dsc: 2
+- bin: BB
+  op: CP E
+  dsc: 2
+- bin: BC
+  op: CP H
+  dsc: 2
+- bin: BD
+  op: CP L
+  dsc: 2
+- bin: BE
+  op: CP (HL)
+  dsc: 2
+- bin: BF
+  op: CP A
+  dsc: 2
+- bin: C0
+  op: RET NZ
+  dsc: 2
+- bin: C1
+  op: POP BC
+  dsc: 2
+- bin: C2
+  op: JP NZ, nn
+  operand: nn
+  dsc: 2
+- bin: C3
+  op: JP nn
+  operand: nn
+  dsc: 2
+- bin: C4
+  op: CALL NZ, nn
+  operand: nn
+  dsc: 2
+- bin: C5
+  op: PUSH BC
+  dsc: 2
+- bin: C6
+  op: ADD A, n
+  operand: n
+  dsc: 2
+- bin: C7
+  op: RST 00H
+  dsc: 2
+- bin: C8
+  op: RET Z
+  dsc: 2
+- bin: C9
+  op: RET
+  dsc: 2
+- bin: CA
+  op: JP Z, nn
+  operand: nn
+  dsc: 2
+- bin: CB
+  op: CB-rel
+  operand: CB
+  dsc: 2
+- bin: CC
+  op: CALL Z, nn
+  operand: nn
+  dsc: 2
+- bin: CD
+  op: CALL nn
+  operand: nn
+  dsc: 2
+- bin: CE
+  op: ADC A, n
+  operand: n
+  dsc: 2
+- bin: CF
+  op: RST 08H
+  dsc: 2
+- bin: D0
+  op: RET NC
+  dsc: 2
+- bin: D1
+  op: POP DE
+  dsc: 2
+- bin: D2
+  op: JP NC, nn
+  operand: nn
+  dsc: 2
+- bin: D3
+  op: OUT (n), A
+  operand: n
+  dsc: 2
+- bin: D4
+  op: CALL NC, nn
+  operand: nn
+  dsc: 2
+- bin: D5
+  op: PUSH DE
+  dsc: 2
+- bin: D6
+  op: SUB n
+  operand: n
+  dsc: 2
+- bin: D7
+  op: RST 10H
+  dsc: 2
+- bin: D8
+  op: RET Z
+  dsc: 2
+- bin: D9
+  op: EXX
+  dsc: 2
+- bin: DA
+  op: JP C, nn
+  operand: nn
+  dsc: 2
+- bin: DB
+  op: IN A, (n)
+  operand: n
+  dsc: 2
+- bin: DC
+  op: CALL C, nn
+  operand: nn
+  dsc: 2
+- bin: DD
+  op: DD-rel
+  operand: DD
+  dsc: 2
+- bin: DE
+  op: SBC A, n
+  operand: n
+  dsc: 2
+- bin: DF
+  op: RST 18H
+  dsc: 2
+- bin: E0
+  op: RET PO
+  dsc: 2
+- bin: E1
+  op: POP HL
+  dsc: 2
+- bin: E2
+  op: JP PO, nn
+  operand: nn
+  dsc: 2
+- bin: E3
+  op: EX (SP), HL
+  dsc: 2
+- bin: E4
+  op: CALL PO, nn
+  operand: nn
+  dsc: 2
+- bin: E5
+  op: PUSH HL
+  dsc: 2
+- bin: E6
+  op: AND n
+  operand: n
+  dsc: 2
+- bin: E7
+  op: RST 20H
+  dsc: 2
+- bin: E8
+  op: RET PE
+  dsc: 2
+- bin: E9
+  op: JP (HL)
+  dsc: 2
+- bin: EA
+  op: JP PE, nn
+  operand: nn
+  dsc: 2
+- bin: EB
+  op: EX DE, HL
+  dsc: 2
+- bin: EC
+  op: CALL PE, nn
+  operand: nn
+  dsc: 2
+- bin: ED
+  op: ED-rel
+  operand: ED
+  dsc: 2
+- bin: EE
+  op: XOR n
+  operand: n
+  dsc: 2
+- bin: EF
+  op: RST 28H
+  dsc: 2
+- bin: F0
+  op: RET P
+  dsc: 2
+- bin: F1
+  op: POP AF
+  dsc: 2
+- bin: F2
+  op: JP P, nn
+  operand: nn
+  dsc: 2
+- bin: F3
+  op: DI
+  dsc: 2
+- bin: F4
+  op: CALL P, nn
+  operand: nn
+  dsc: 2
+- bin: F5
+  op: PUSH AF
+  dsc: 2
+- bin: F6
+  op: OR n
+  operand: n
+  dsc: 2
+- bin: F7
+  op: RST 30H
+  dsc: 2
+- bin: F8
+  op: RET M
+  dsc: 2
+- bin: F9
+  op: LD SP, HL
+  dsc: 2
+- bin: FA
+  op: JP M, nn
+  operand: nn
+  dsc: 2
+- bin: FB
+  op: EI
+  dsc: 2
+- bin: FC
+  op: CALL M, nn
+  operand: nn
+  dsc: 2
+- bin: FD
+  op: FD-rel
+  operand: FD
+  dsc: 2
+- bin: FE
+  op: CP n
+  operand: n
+  dsc: 2
+- bin: FF
+  op: RST 38H
+  dsc: 2
